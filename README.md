@@ -20,23 +20,24 @@ $ npm dev
 ```
 
 ## What's included
-- JSX support for React.
+- [React](https://reactjs.org/)
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) support for React.
 - CSS modules support.
 - JS, CSS and assets automatic bundling.
-- Hot reloading via Webpack 4.
+- [Hot reloading](https://webpack.js.org/concepts/hot-module-replacement/) via Webpack 4.
 
 
 ## Folder structure
 ```
-├── my-app/             # Your project's name, you can rename it
+├── my-app/                             # Project root
 
-    ├── build/                      # Webpack 4 will manage this folder for you
-        ├── bundle.css              # Bundled CSS
-        ├── bundle.js               # Bundled JS
-        ├── images                  # Your images will be copied here
+    ├── build/                          # Webpack 4 will manage this folder for you
+        ├── bundle.css                  # Bundled CSS
+        ├── bundle.js                   # Bundled JS
+        ├── images                      # images will be copied here
 
     ├── public
-        ├── images/                 # your public images
+        ├── images/                     # public images
 
     ├── src/
             ├── assets/                 # assets for the project
