@@ -6,7 +6,7 @@ const BUILD_DIR = `${__dirname}/build`;
 const APP_DIR = `${__dirname}/src`;
 
 const config = {
-    target: "electron-main",
+    target: "electron-renderer",
     watch: true,
     watchOptions: {
         ignored: /node_modules/

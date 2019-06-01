@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 const fs = window.require('fs');
-// const { remote } = require('electron');
-// const { BrowserWindow } = remote;
+const { remote } = require('electron');
+const { BrowserWindow } = remote;
 
 export default class App extends Component {
     constructor(props) {
@@ -9,14 +9,15 @@ export default class App extends Component {
         this.handleOpenWindow = this.handleOpenWindow.bind(this);
     }
     handleOpenWindow() {
-        // const win = new BrowserWindow();
+        const win = new BrowserWindow();
     }
     render() {
         return (
             <Fragment>
                 <h1>Hello world</h1>
-                {/* <span>Home DIR: {process.env['HOME']}</span> */}
-                {/* <button onClick={() => this.handleOpenWindow()}>Press Me</button> */}
+                <span>Home directory: {process.env['HOME']}</span>
+                <hr/>
+                <button onClick={() => this.handleOpenWindow()}>Press Me</button>
             </Fragment>
         );
     }
