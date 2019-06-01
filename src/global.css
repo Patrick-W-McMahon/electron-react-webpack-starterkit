@@ -6,6 +6,24 @@
 }
 
 
+:global .jumbotron {
+    text-align: center;
+}
+
+:global .jumbotron > * {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+:global .btn-group {
+    margin-top: 20px;
+}
+
+:global .accordion .card .card-body {
+    font-size: 0.75em;
+}
+
 /*
  * Global CSS goes here, it requires to use :global before each style
  */
@@ -13,21 +31,27 @@
     height: 100%;
 }
 :global body {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin: auto;
+    margin: auto; */
 }
 :global #app {
-    color: #2c3e50;
+    /* color: #2c3e50;
     max-width: 600px;
     font-family: Source Sans Pro, Helvetica, sans-serif;
-    text-align: center;
+    text-align: center; */
 }
 :global #app p {
-    text-align: justify;
+    /* text-align: justify; */
 }
 :global .hello {
     color: var(--primary-color);
+}
+
+table td {
+    max-width: 200px;
+    max-height: 200px;
+    overflow: scroll;
 }
