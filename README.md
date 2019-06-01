@@ -16,7 +16,7 @@ $ npm install
 ## Develop
 Just run this command to start developing with hot reloading.
 ``` bash
-$ npm dev
+$ npm run dev
 ```
 
 ## What's included
