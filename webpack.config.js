@@ -6,7 +6,11 @@ const BUILD_DIR = `${__dirname}/build`;
 const APP_DIR = `${__dirname}/src`;
 
 const config = {
+    target: "electron-main",
     watch: true,
+    watchOptions: {
+        ignored: /node_modules/
+    },
     entry: `${APP_DIR}/renderer_process.js`,
     output: {
         path: BUILD_DIR,
@@ -43,8 +47,8 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Electron React',
-            template: `${__dirname}/templates/index.hbs`
+            title: 'Electron React Webpack Starterkit',
+            template: `./templates/index.hbs`
         }),
         new CopyWebpackPlugin([
             {from:'public',to:'.'} 
