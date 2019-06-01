@@ -50,8 +50,13 @@
     color: var(--primary-color);
 }
 
-table td {
-    max-width: 200px;
-    max-height: 200px;
-    overflow: scroll;
+:global .platform-set {
+    text-align: center;
+    font-size: 1.35em;
+    font-weight: 900;
+}
+
+:global .platform-set img {
+    display: inline-block;
+    height: 100px;
 }

@@ -3,7 +3,9 @@ const electron = require('electron');
 const { app, BrowserWindow } = electron;
 
 // Let electron reloads by itself when webpack watches changes in ./app/
-//require('electron-reload')(__dirname);
+require('electron-reload')(__dirname, {
+  hardResetMethod: 'exit'
+});
 
 // To avoid being garbage collected
 let mainWindow;
@@ -12,7 +14,8 @@ function createWindow () {
       width: 800,
       height: 600,
       webPreferences: {
-        nodeIntegration: true
+        nodeIntegration: true,
+        nodeIntegrationInWorker: true
       }
     });
     mainWindow.loadURL(`file://${__dirname}/build/index.html`);
