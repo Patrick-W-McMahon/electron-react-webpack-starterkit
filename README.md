@@ -45,7 +45,7 @@ $ npm run dev
             ├── containers/             # React Containers
 
             ├── App.jsx                 # React main component where everything is tied up
-            ├── renderer_process.js     # Electron's renderer-process, where you React app is called.
+            ├── renderer_process.js     # Electron's renderer-process, where your React app is called.
             ├── global.css              # Global CSS and global constants go here
 
     ├── templates/                      # Templates 
